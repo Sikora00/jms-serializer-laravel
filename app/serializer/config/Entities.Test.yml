@@ -1,0 +1,15 @@
+# Name of the file follows: Katalog.FileName.yml
+#
+# Some fields require context serialization see AppBundle/Serializer/EventSubscriber/*ContextSubscriber
+App\Entities\Test:
+  exclusion_policy: ALL
+  properties:
+    id:
+      expose: true
+      type: string
+      groups:
+      - test
+    name:
+      expose: true
+      groups:
+      - test

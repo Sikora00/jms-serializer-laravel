@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Entities\Test;
+use JMS\Serializer\SerializationContext;
+use JMS\Serializer\SerializerBuilder;
 use LaravelDoctrine\ORM\Facades\EntityManager;
 
 class TestController extends Controller
@@ -10,8 +12,6 @@ class TestController extends Controller
 
     public function test()
     {
-        $test = new Test('test1', 'jdaksjdkajkwdkncnaj nsdn awu nawu');
-        EntityManager::persist($test);
-        EntityManager::flush();
+        return $this->serializeResponse(EntityManager::find(Test::class, 1), []);
     }
 }
