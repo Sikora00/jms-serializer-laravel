@@ -3,12 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Entities\Test;
-
-use JMS\Serializer\SerializationContext;
-use JMS\Serializer\SerializerBuilder;
 use LaravelDoctrine\ORM\Facades\EntityManager;
-use Metadata\ClassMetadata;
-use Symfony\Component\Serializer\Mapping\Loader\AnnotationLoader;
 
 class TestController extends Controller
 {
