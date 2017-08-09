@@ -13,7 +13,7 @@ class Controller extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
 
-    public function serializeResponse($response, array $groups = [])
+    public function serialize($response, array $groups = [])
     {
         $serializer = SerializerBuilder::create()
             ->addMetadataDir(base_path('app/serializer/config'), 'App')

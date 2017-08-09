@@ -73,5 +73,4 @@ class Test
     {
         $this->text = $text;
     }
-
 }

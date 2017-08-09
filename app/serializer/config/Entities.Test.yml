@@ -13,3 +13,6 @@ App\Entities\Test:
       expose: true
       groups:
       - test
+    text:
+      groups:
+      - test2
